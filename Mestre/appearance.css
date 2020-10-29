@@ -1,0 +1,248 @@
+/* Anastasia Css */
+
+.align{
+  	display: flex;
+  	flex-direction: column;
+  	justify-content: center;
+  	align-items: center;
+  	text-align: center;  
+}
+
+.divmain{
+    
+    margin-top: 1%;
+    
+}
+
+.background{
+
+    background-image: url('img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position-y: -10px;
+    background-position-x: -10px;
+
+}
+
+.border{
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px #196619;
+    width: 17%;
+
+}
+
+.center-anastasia{    
+
+    margin: 1% 3%;
+}
+
+.centercharacter-anastasia{    
+
+    display:block;
+    margin: 3% 26%;
+
+}
+
+.centerstatecat{
+    
+   
+   margin: -2% 4%;
+
+}
+.centerstate{
+    
+   
+   margin: 7% 4%;
+
+}
+
+.centerstate2{
+
+    margin: 4%;
+    margin-top: -8%;
+    margin-bottom: 0%;
+
+}
+
+.centerstate3{
+
+    margin: 4%;
+
+}
+
+.centerstatus{
+
+    padding: 0.5%;
+    margin-right: 8%;
+    margin-left: 2%;
+    border: 1px;
+    border-radius: 10px;
+    box-shadow: 3px 2px #006600;
+    width: 8%;
+
+}
+
+.centerdivstatus{
+    margin-bottom: -15%;
+    margin-left: 20%;
+
+}
+
+.btn-hplus{
+
+    position: absolute;
+    margin: 2% 15%;
+
+}
+
+.btn-hpminus{
+
+    position: absolute;
+    margin: 2% 2%;
+
+}
+
+.btn-hplus2{
+
+    position: absolute;
+    margin: 0% 15%;
+
+}
+
+.btn-hpminus2{
+
+    position: absolute;
+    margin: 0% 2%;
+
+}
+
+.btnspaceplus{
+
+    margin-bottom: 50%;
+    
+}
+
+.btnspaceminus{
+
+    margin-bottom: 90%;
+    
+}
+
+.btnrounded{
+
+    border: 1px;
+    border-radius: 15px;
+    box-shadow: 3px 2px #006600;
+
+}
+
+.greenbackground{
+
+    background: #29a329;
+
+}
+
+.statusbarhp{
+
+    margin: 22% 25%;
+    width: 50%;
+    height: 35px!important;
+    margin-bottom: 10%;
+    background-color: rgba(255, 77, 77, 0.5)!important;
+
+}
+
+.statusbarsnt{
+
+    margin: 11% 25%;
+    width: 50%;
+    height: 35px!important;
+    margin-bottom: 10%;
+    background-color: rgba(0, 102, 255, 0.5)!important;
+
+}
+
+.statusnumber{
+    
+    color: white;
+    font-size: 14px;
+    margin-top: 8px;       
+    
+}
+
+/* Arthur Css */
+
+.center-arthur{    
+
+    margin: -33% 22%;
+}
+
+.centercharacter-arthur{    
+
+    display:block;
+    margin: 3% 26%;
+
+}
+
+/* Plínio Css */
+
+.center-plinio{    
+
+    margin: 1% 41%;
+}
+
+.center-flamel{ 
+    
+    position: absolute;
+    margin: 50% 40%;
+}
+
+.centercharacter-plinio{    
+
+    display:block;
+    margin: 3% 22%;
+
+}
+
+.centercharacter-flamel{    
+
+    display:block;
+    margin: 3% 30%;
+
+}
+
+.centerdivstatus-flamel{
+
+    margin-bottom: -15%;
+    margin-left: 35%;
+
+}
+
+/* Valerie Css */
+
+.center-valerie{    
+
+    margin: -50.2% 60%;
+}
+
+.centercharacter-valerie{    
+
+    display:block;
+    margin: 3% 26%;
+
+}
+
+/* Yan Css */
+
+.center-yan{    
+
+    margin: 18.5% 79%;
+}
+
+.centercharacter-yan{    
+
+    display:block;
+    margin: 3% 26%;
+
+}

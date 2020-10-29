@@ -1,0 +1,117 @@
+.background{
+
+    background-image: url('img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-position-y: -10px;
+    background-position-x: -10px;
+
+}
+
+.border{
+    border: 0px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 2px #196619;
+
+}
+
+.center{    
+
+    margin: 6% 38%;
+}
+
+.centercharacter{    
+
+    display:block;
+    margin: 6% 30%;
+
+}
+
+.centerstate{
+
+    margin: 10% 10%;
+
+}
+
+.centerstate2{
+
+    margin: 10%;
+    margin-top: -10%;
+
+}
+
+.centerstate3{
+
+    margin: 10%;
+    margin-top: -8%;
+
+}
+
+.centercharactername{    
+    position: absolute;
+    margin: -14% 18.05%;
+
+}
+
+.centerstatus{
+
+    padding: 0.5%;
+    margin-right: 8%;
+    margin-left: 2%;
+    border: 1px;
+    border-radius: 10px;
+    box-shadow: 3px 2px #006600;
+    width: 8%;
+
+}
+
+.centerdivstatus{
+
+    margin-left: 11%;
+
+}
+
+.btnspace{
+
+    margin-right: 50%;
+
+}
+
+.btnrounded{
+
+    border: 1px;
+    border-radius: 15px;
+    box-shadow: 3px 2px #006600;
+
+}
+
+.greenbackground{
+
+    background: #29a329;
+
+}
+
+.statusbarhp{
+
+    margin: 6% 25%;
+    width: 48%;
+    height: 35px!important;
+    background-color: rgba(255, 77, 77, 0.5)!important;
+}
+
+.statusbarsnt{
+
+    margin: 6% 25%;
+    width: 48%;
+    height: 35px!important;
+    background-color: rgba(0, 102, 255, 0.5)!important;
+
+}
+
+.statusnumber{
+    
+    color: white;
+    font-size: 14px;
+    margin-top: 8px;       
+    
+}

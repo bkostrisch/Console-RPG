@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="appearance.css">   
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="script.js"></script>
+
+    </head>
+
+    <body class="background">
+        <div class="border col-md-3 greenbackground center">
+            <!-- Personagem e Nome -->
+            <div>
+                <img class="centercharacter" id="personagem" src="./img/Valerie_normal.png" alt="Minha Figura" style="width: 195px ; height: 250px ">         
+                <img class="centercharactername" id="personagem" src="./img/Nome_Valerie.png" alt="Minha Figura" style="width: 250px ; height: 90px  ">
+            </div>
+            <!-- Estado do Personagem -->
+            <div class="centerstate">
+                <input onclick="mudarImagem('Valerie_normal')" type="radio" id="img1" name="scales" checked>
+                <label class="col-md-6" for="scales">Anastasia</label>
+
+                <input onclick="mudarImagem('Valerie_ferida')" type="radio" id="img2" name="scales">
+                <label class="col-md-4" for="scales">Lesão Grave</label>  
+            </div>  
+            <div class="centerstate2">
+                <input onclick="mudarImagem('Valerie_insana')" type="radio" id="img3" name="scales">
+                <label class="col-md-6"for="scales">Insanidade Temporária</label>
+
+                <input onclick="mudarImagem('Valerie_ferida_insana')" type="radio" id="img4" name="scales">
+                <label class="col-md-4"for="scales">Ferido/Insano</label>            
+            </div>
+            <div class="centerstate3">                
+                <input onclick="mudarImagem('Valerie_inconsciente')" type="radio" id="img5" name="scales">
+                <label class="col-md-6"for="scales">Inconsciênte</label>
+            </div>
+            <!-- Definição de Status -->
+            <div class="centerdivstatus">
+                <label class="">Hp Máximo:</label><input class="centerstatus" onchange='changeHp()' id="hp"> 
+                <label class="">Sanidade Máxima:</label><input class="centerstatus" onchange='changeSanity()' id="snt">
+            </div>                 
+            <!-- Barras de Hp e Sanidade -->
+            <div>
+                <button class="btnrounded" onclick="clickHpMinus1()">-1</button>
+                <button class="btnrounded" onclick="clickHpMinus5()">-5</button>
+                <button class="btnrounded btnspace" onclick="clickHpMinus10()">-10</button>
+                <button class="btnrounded" onclick="clickHpPlus1()">+1</button>                
+                <button class="btnrounded" onclick="clickHpPlus5()">+5</button>                
+                <button class="btnrounded" onclick="clickHpPlus10()">+10</button>                
+            </div>
+            <div id="hpbar" class="progress statusbarhp">
+                <div style="background-color: #990000" id="health" class="progress-bar" role="progressbar" aria-valuenow="0"
+                     aria-valuemin="0" aria-valuemax="100">  
+                    <label id="hpnumber" class="statusnumber"></label>
+                </div>
+            </div>  
+            <div>
+                <button class="btnrounded" onclick="clickSanityMinus1()">-1</button>
+                <button class="btnrounded" onclick="clickSanityMinus5()">-5</button>
+                <button class="btnrounded btnspace" onclick="clickSanityMinus10()">-10</button>
+                <button class="btnrounded" onclick="clickSanityPlus1()">+1</button>                
+                <button class="btnrounded" onclick="clickSanityPlus5()">+5</button>                
+                <button class="btnrounded" onclick="clickSanityPlus10()">+10</button>  
+            </div>        
+            <div id="sanitybar" class="progress statusbarsnt">
+                <div style="background-color: #0047b3" id="sanity" class="progress-bar" role="progressbar" aria-valuenow="0"
+                     aria-valuemin="0" aria-valuemax="100"> 
+                    <label id="sntnumber" class="statusnumber"></label>
+                </div>
+            </div>
+            <!-- Fim -->
+        </div>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+    </body>
+</html>

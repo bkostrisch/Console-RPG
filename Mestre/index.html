@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="appearance.css">   
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="script.js"></script>
+
+    </head>
+
+    <body class="background">
+        <div class="divmain">
+        <div class="border greenbackground center-anastasia">
+            <!-- Personagem e Nome -->
+            <div>
+                <img class="centercharacter-anastasia" id="personagemanastasia" src="./img/Anastasia_normal.png" alt="Minha Figura" style="width: 145px ; height: 205px "> 
+            </div>
+            <!-- Estado do Personagem -->
+            <div class="centerstate">
+                <input onclick="mudarImagemAnastasia('Anastasia_normal')" type="radio" id="img1anastasia" name="scales" checked>
+                <label class="col-md-5" for="scales">Anastasia</label>
+
+                <input onclick="mudarImagemAnastasia('Anastasia_ferido')" type="radio" id="img2anastasia" name="scales">
+                <label for="scales">Lesão Grave</label>  
+            </div>  
+            <div class="centerstate2">
+                <input onclick="mudarImagemAnastasia('Anastasia_insano')" type="radio" id="img3anastasia" name="scales">
+                <label class="col-md-5"for="scales">Insanidade Temporária</label>
+
+                <input onclick="mudarImagemAnastasia('Anastasia_ferido_insano')" type="radio" id="img4anastasia" name="scales">
+                <label for="scales">Ferido/Insano</label>
+            </div>
+            <div class="centerstate3">
+                <input onclick="mudarImagemAnastasia('Anastasia_inconsciente')" type="radio" id="img5anastasia" name="scales">
+                <label class="col-md-5"for="scales">Inconsciente</label>
+            </div>
+            <!-- Definição de Status -->
+            <div class="centerdivstatus">
+                <label class="">MaxHp:</label><input class="centerstatus" onchange='changeHpAnastasia()' id="hpanastasia"> 
+                <label class="">MaxSnt:</label><input class="centerstatus" onchange='changeSanityAnastasia()' id="sntanastasia">
+            </div>                 
+            <!-- Barras de Hp e Sanidade -->
+
+            <div class="btn-hpminus">
+                <button class="btnrounded row btnspaceminus" onclick="clickHpMinus1Anastasia()">-1</button>
+                <button class="btnrounded row btnspaceminus" onclick="clickHpMinus5Anastasia()">-5</button>
+                <button class="btnrounded row btnspaceminus" onclick="clickHpMinus10Anastasia()">-10</button>  
+            </div>      
+            <div class="btn-hplus">
+                <button class="btnrounded row btnspaceplus" onclick="clickHpPlus1Anastasia()">+1</button>                
+                <button class="btnrounded row btnspaceplus" onclick="clickHpPlus5Anastasia()">+5</button>                
+                <button class="btnrounded row btnspaceplus" onclick="clickHpPlus10Anastasia()">+10</button>   
+            </div>
+            <div class="align">
+            <div id="hpbaranastasia" class="progress statusbarhp">
+                <div style="background-color: #990000" id="healthanastasia" class="progress-bar" role="progressbar" aria-valuenow="0"
+                     aria-valuemin="0" aria-valuemax="100">   
+                    <label id="hpnumberanastasia" class="statusnumber"></label>
+                </div>  
+            </div>     
+            </div>
+            <div class="btn-hpminus2">
+                <button class="btnrounded row btnspaceminus" onclick="clickSanityMinus1Anastasia()">-1</button>
+                <button class="btnrounded row btnspaceminus" onclick="clickSanityMinus5Anastasia()">-5</button>
+                <button class="btnrounded row btnspaceminus" onclick="clickSanityMinus10Anastasia()">-10</button>                
+            </div>        
+            <div class="btn-hplus2">
+                <button class="btnrounded row btnspaceplus" onclick="clickSanityPlus1Anastasia()">+1</button>                
+                <button class="btnrounded row btnspaceplus" onclick="clickSanityPlus5Anastasia()">+5</button>                
+                <button class="btnrounded row btnspaceplus" onclick="clickSanityPlus10Anastasia()">+10</button>  
+            </div>
+            <div class="align">
+            <div id="sanitybaranastasia" class="progress statusbarsnt">
+                <div style="background-color: #0047b3" id="sanityanastasia" class="progress-bar" role="progressbar" aria-valuenow="0"
+                     aria-valuemin="0" aria-valuemax="100"> 
+                    <label id="sntnumberanastasia" class="statusnumber"></label>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Fim Anastasia -->
+        
+        <!-- Arthur -->
+        <div class="border greenbackground center-arthur">
+            <!-- Personagem e Nome -->
+            <div>
+                <img class="centercharacter-arthur" id="personagemarthur" src="./img/Arthur_normal.png" alt="Minha Figura" style="width: 145px ; height: 205px "> 
+            </div>
+            <!-- Estado do Personagem -->
+            <div class="centerstate">
+                <input onclick="mudarImagemArthur('Arthur_normal')" type="radio" id="img1arthur" name="scales" checked>
+                <label class="col-md-5" for="scales">Arthur</label>
+
+                <input onclick="mudarImagemArthur('Arthur_ferido')" type="radio" id="img2arthur" name="scales">
+                <label for="scales">Lesão Grave</label>  
+            </div>  
+            <div class="centerstate2">
+                <input onclick="mudarImagemArthur('Arthur_insano')" type="radio" id="img3arthur" name="scales">
+                <label class="col-md-5"for="scales">Insanidade Temporária</label>
+                
+                <input onclick="mudarImagemArthur('Arthur_ferido_insano')" type="radio" id="img4arthur" name="scales">
+                <label for="scales">Ferido/Insano</label>
+            </div>            
+            <div class="centerstate3">
+                <input onclick="mudarImagemArthur('Arthur_inconsciente')" type="radio" id="img5arthur" name="scales">
+                <label class="col-md-5"for="scales">Inconsciente</label>
+            </div>            
+            <!-- Definição de Status -->
+            <div class="centerdivstatus">
+                <label class="">MaxHp:</label><input class="centerstatus" onchange='changeHpArthur()' id="hparthur"> 
+                <label class="">MaxSnt:</label><input class="centerstatus" onchange='changeSanityArthur()' id="sntarthur">
+            </div>                 
+            <!-- Barras de Hp e Sanidade -->
+            <div class="btn-hpminus">
+                <button class="btnrounded row btnspaceminus" onclick="clickHpMinus1Arthur()">-1</button>
+                <button class="btnrounded row btnspaceminus" onclick="clickHpMinus5Arthur()">-5</button>
+                <button class="btnrounded row btnspaceminus" onclick="clickHpMinus10Arthur()">-10</button>  
+            </div>      
+            <div class="btn-hplus">
+                <button class="btnrounded row btnspaceplus" onclick="clickHpPlus1Arthur()">+1</button>                
+                <button class="btnrounded row btnspaceplus" onclick="clickHpPlus5Arthur()">+5</button>                
+                <button class="btnrounded row btnspaceplus" onclick="clickHpPlus10Arthur()">+10</button>   
+            </div>
+            <div class="align">
+            <div id="hpbararthur" class="progress statusbarhp">
+                <div style="background-color: #990000" id="healtharthur" class="progress-bar" role="progressbar" aria-valuenow="0"
+                     aria-valuemin="0" aria-valuemax="100">  
+                    <label id="hpnumberarthur" class="statusnumber"></label>
+                </div>
+            </div>               
+            </div>               
+            <div class="btn-hpminus2">
+                <button class="btnrounded row btnspaceminus" onclick="clickSanityMinus1Arthur()">-1</button>
+                <button class="btnrounded row btnspaceminus" onclick="clickSanityMinus5Arthur()">-5</button>
+                <button class="btnrounded row btnspaceminus" onclick="clickSanityMinus10Arthur()">-10</button>                
+            </div>        
+            <div class="btn-hplus2">
+                <button class="btnrounded row btnspaceplus" onclick="clickSanityPlus1Arthur()">+1</button>                
+                <button class="btnrounded row btnspaceplus" onclick="clickSanityPlus5Arthur()">+5</button>                
+                <button class="btnrounded row btnspaceplus" onclick="clickSanityPlus10Arthur()">+10</button>  
+            </div>
+            <div class="align">
+            <div id="sanitybararthur" class="progress statusbarsnt">
+                <div style="background-color: #0066ff" id="sanityarthur" class="progress-bar" role="progressbar" aria-valuenow="0"
+                     aria-valuemin="0" aria-valuemax="100"> 
+                    <label id="sntnumberarthur" class="statusnumber"></label>
+                </div>
+            </div>            
+            </div>            
+        </div>
+        <!-- Fim Arthur -->
+        
+        <!-- Plínio -->
+        <div class="border greenbackground center-plinio">
+            <!-- Personagem e Nome -->
+            <div>
+                <img class="centercharacter-plinio" id="personagemplinio" src="./img/Plínio_normal.png" alt="Minha Figura" style="width: 170px ; height: 205px "> 
+            </div>
+            <!-- Estado do Personagem -->
+            <div class="centerstate">
+                <input onclick="mudarImagemPlinio('Plínio_normal')" type="radio" id="img1plinio" name="scales" checked>
+                <label class="col-md-5" for="scales">Plínio</label>
+
+                <input onclick="mudarImagemPlinio('Plínio_ferido')" type="radio" id="img2plinio" name="scales">
+                <label for="scales">Lesão Grave</label>  
+            </div>  
+            <div class="centerstate2">
+                <input onclick="mudarImagemPlinio('Plínio_insano')" type="radio" id="img3plinio" name="scales">
+                <label class="col-md-5"for="scales">Insanidade Temporária</label>
+                
+                <input onclick="mudarImagemPlinio('Plínio_ferido_insano')" type="radio" id="img4plinio" name="scales">
+                <label for="scales">Ferido/Insano</label>
+            </div>            
+            <div class="centerstate3">
+                <input onclick="mudarImagemPlinio('Plínio_inconsciente')" type="radio" id="img5plinio" name="scales">
+                <label class="col-md-5"for="scales">Inconsciente</label>
+            </div>            
+            <!-- Definição de Status -->
+            <div class="centerdivstatus">
+                <label class="">MaxHp:</label><input class="centerstatus" onchange='changeHpPlinio()' id="hplinio"> 
+                <label class="">MaxSnt:</label><input class="centerstatus" onchange='changeSanityPlinio()' id="sntplinio">
+            </div>                
+            <!-- Barras de Hp e Sanidade -->
+            <div class="btn-hpminus">
+                <button class="btnrounded row btnspaceminus" onclick="clickHpMinus1Plinio()">-1</button>
+                <button class="btnrounded row btnspaceminus" onclick="clickHpMinus5Plinio()">-5</button>
+                <button class="btnrounded row btnspaceminus" onclick="clickHpMinus10Plinio()">-10</button>  
+            </div>      
+            <div class="btn-hplus">
+                <button class="btnrounded row btnspaceplus" onclick="clickHpPlus1Plinio()">+1</button>                
+                <button class="btnrounded row btnspaceplus" onclick="clickHpPlus5Plinio()">+5</button>                
+                <button class="btnrounded row btnspaceplus" onclick="clickHpPlus10Plinio()">+10</button>   
+            </div>
+            <div class="align">
+            <div id="hpbarplinio" class="progress statusbarhp">
+                <div style="background-color: #990000" id="healthplinio" class="progress-bar" role="progressbar" aria-valuenow="0"
+                     aria-valuemin="0" aria-valuemax="100">  
+                    <label id="hpnumberplinio" class="statusnumber"></label>
+                </div>
+            </div>               
+            </div>               
+            <div class="btn-hpminus2">
+                <button class="btnrounded row btnspaceminus" onclick="clickSanityMinus1Plinio()">-1</button>
+                <button class="btnrounded row btnspaceminus" onclick="clickSanityMinus5Plinio()">-5</button>
+                <button class="btnrounded row btnspaceminus" onclick="clickSanityMinus10Plinio()">-10</button>                
+            </div>        
+            <div class="btn-hplus2">
+                <button class="btnrounded row btnspaceplus" onclick="clickSanityPlus1Plinio()">+1</button>                
+                <button class="btnrounded row btnspaceplus" onclick="clickSanityPlus5Plinio()">+5</button>                
+                <button class="btnrounded row btnspaceplus" onclick="clickSanityPlus10Plinio()">+10</button>  
+            </div>
+            <div class="align">
+            <div id="sanitybarplinio" class="progress statusbarsnt">
+                <div style="background-color: #0066ff" id="sanityplinio" class="progress-bar" role="progressbar" aria-valuenow="0"
+                     aria-valuemin="0" aria-valuemax="100"> 
+                    <label id="sntnumberplinio" class="statusnumber"></label>
+                </div>
+            </div>            
+            </div>            
+        </div>       
+               
+        <!-- Fim Plínio -->
+         
+        <!-- Flamel -->
+        
+        <div class="border greenbackground center-plinio">
+            <!-- Personagem e Nome -->
+            <div>
+                <img class="centercharacter-flamel" id="flamel" src="./img/Flamel.png" alt="Minha Figura" style="width: 110px ; height: 150px "> 
+            </div>            
+            <!-- Estado do Personagem -->
+            <div class="centerstatecat">
+                <input onclick="mudarImagemFlamel('Flamel')" type="radio" id="img1flamel" name="scales" checked>
+                <label class="col-md-5" for="scales">Flamel</label>
+
+                <input onclick="mudarImagemFlamel('Flamel_inconsciente')" type="radio" id="img2flamel" name="scales">
+                <label for="scales">Inconsciente</label>  
+            </div>  
+            <!-- Definição de Status -->
+            <div class="centerdivstatus-flamel">
+                <label class="">MaxHp:</label><input class="centerstatus" onchange='changeHpFlamel()' id="hpflamel">     
+            </div>                
+            <!-- Barras de Hp e Sanidade -->
+            <div class="btn-hpminus">
+                <button class="btnrounded row btnspaceminus" onclick="clickHpMinus1Flamel()">-1</button>
+                <button class="btnrounded row btnspaceminus" onclick="clickHpMinus5Flamel()">-5</button>
+                <button class="btnrounded row btnspaceminus" onclick="clickHpMinus10Flamel()">-10</button>  
+            </div>      
+            <div class="btn-hplus">
+                <button class="btnrounded row btnspaceplus" onclick="clickHpPlus1Flamel()">+1</button>                
+                <button class="btnrounded row btnspaceplus" onclick="clickHpPlus5Flamel()">+5</button>                
+                <button class="btnrounded row btnspaceplus" onclick="clickHpPlus10Flamel()">+10</button>   
+            </div>
+            <div class="align">
+            <div id="hpbarflamel" class="progress statusbarhp">
+                <div style="background-color: #990000" id="healthflamel" class="progress-bar" role="progressbar" aria-valuenow="0"
+                     aria-valuemin="0" aria-valuemax="100">  
+                    <label id="hpnumberflamel" class="statusnumber"></label>
+                </div>
+            </div>              
+            </div>    
+        </div>  
+           
+        <!-- Fim Flamel -->
+        
+        <!-- Valerie -->
+        
+        <div class="border greenbackground center-valerie">
+            <!-- Personagem e Nome -->
+            <div>
+                <img class="centercharacter-valerie" id="personagemvalerie" src="./img/Valerie_normal.png" alt="Minha Figura" style="width: 170px ; height: 205px "> 
+            </div>
+            <!-- Estado do Personagem -->
+            <div class="centerstate">
+                <input onclick="mudarImagemValerie('Valerie_normal')" type="radio" id="img1valerie" name="scales" checked>
+                <label class="col-md-5" for="scales">Valerie</label>
+
+                <input onclick="mudarImagemValerie('Valerie_ferida')" type="radio" id="img2valerie" name="scales">
+                <label for="scales">Lesão Grave</label>  
+            </div>  
+            <div class="centerstate2">
+                <input onclick="mudarImagemValerie('Valerie_insana')" type="radio" id="img3valerie" name="scales">
+                <label class="col-md-5"for="scales">Insanidade Temporária</label>
+                
+                <input onclick="mudarImagemValerie('Valerie_ferida_insana')" type="radio" id="img4valerie" name="scales">
+                <label for="scales">Ferida/Insana</label>
+            </div>            
+            <div class="centerstate3">
+                <input onclick="mudarImagemValerie('Valerie_inconsciente')" type="radio" id="img5valerie" name="scales">
+                <label class="col-md-5"for="scales">Inconsciente</label>
+            </div>            
+            <!-- Definição de Status -->
+            <div class="centerdivstatus">
+                <label class="">MaxHp:</label><input class="centerstatus" onchange='changeHpValerie()' id="hpvalerie"> 
+                <label class="">MaxSnt:</label><input class="centerstatus" onchange='changeSanityValerie()' id="sntvalerie">
+            </div>                
+            <!-- Barras de Hp e Sanidade -->
+            <div class="btn-hpminus">
+                <button class="btnrounded row btnspaceminus" onclick="clickHpMinus1Valerie()">-1</button>
+                <button class="btnrounded row btnspaceminus" onclick="clickHpMinus5Valerie()">-5</button>
+                <button class="btnrounded row btnspaceminus" onclick="clickHpMinus10Valerie()">-10</button>  
+            </div>      
+            <div class="btn-hplus">
+                <button class="btnrounded row btnspaceplus" onclick="clickHpPlus1Valerie()">+1</button>                
+                <button class="btnrounded row btnspaceplus" onclick="clickHpPlus5Valerie()">+5</button>                
+                <button class="btnrounded row btnspaceplus" onclick="clickHpPlus10Valerie()">+10</button>   
+            </div>
+            <div class="align">
+            <div id="hpbarvalerie" class="progress statusbarhp">
+                <div style="background-color: #990000" id="healthvalerie" class="progress-bar" role="progressbar" aria-valuenow="0"
+                     aria-valuemin="0" aria-valuemax="100">  
+                    <label id="hpnumbervalerie" class="statusnumber"></label>
+                </div>
+            </div>               
+            </div>               
+            <div class="btn-hpminus2">
+                <button class="btnrounded row btnspaceminus" onclick="clickSanityMinus1Valerie()">-1</button>
+                <button class="btnrounded row btnspaceminus" onclick="clickSanityMinus5Valerie()">-5</button>
+                <button class="btnrounded row btnspaceminus" onclick="clickSanityMinus10Valerie()">-10</button>                
+            </div>        
+            <div class="btn-hplus2">
+                <button class="btnrounded row btnspaceplus" onclick="clickSanityPlus1Valerie()">+1</button>                
+                <button class="btnrounded row btnspaceplus" onclick="clickSanityPlus5Valerie()">+5</button>                
+                <button class="btnrounded row btnspaceplus" onclick="clickSanityPlus10Valerie()">+10</button>  
+            </div>
+            <div class="align">
+            <div id="sanitybarvalerie" class="progress statusbarsnt">
+                <div style="background-color: #0066ff" id="sanityvalerie" class="progress-bar" role="progressbar" aria-valuenow="0"
+                     aria-valuemin="0" aria-valuemax="100"> 
+                    <label id="sntnumbervalerie" class="statusnumber"></label>
+                </div>
+            </div>            
+            </div>            
+        </div>            
+        <!-- Fim Valerie -->
+        
+        <!-- Yan -->
+        
+        <div class="border greenbackground center-yan">
+            <!-- Personagem e Nome -->
+            <div>
+                <img class="centercharacter-yan" id="personagemyan" src="./img/Yan_normal.png" alt="Minha Figura" style="width: 165px ; height: 205px "> 
+            </div>
+            <!-- Estado do Personagem -->
+            <div class="centerstate">
+                <input onclick="mudarImagemYan('Yan_normal')" type="radio" id="img1yan" name="scales" checked>
+                <label class="col-md-5" for="scales">Yan</label>
+
+                <input onclick="mudarImagemYan('Yan_ferido')" type="radio" id="img2yan" name="scales">
+                <label for="scales">Lesão Grave</label>  
+            </div>  
+            <div class="centerstate2">
+                <input onclick="mudarImagemYan('Yan_insano')" type="radio" id="img3yan" name="scales">
+                <label class="col-md-5"for="scales">Insanidade Temporária</label>
+
+                <input onclick="mudarImagemYan('Yan_ferido_insano')" type="radio" id="img4yan" name="scales">
+                <label for="scales">Ferido/Insano</label>
+            </div>
+            <div class="centerstate3">
+                <input onclick="mudarImagemYan('Yan_inconsciente')" type="radio" id="img5yan" name="scales">
+                <label class="col-md-5"for="scales">Inconsciente</label>
+            </div>
+            <!-- Definição de Status -->
+            <div class="centerdivstatus">
+                <label class="">MaxHp:</label><input class="centerstatus" onchange='changeHpYan()' id="hpyan"> 
+                <label class="">MaxSnt:</label><input class="centerstatus" onchange='changeSanityYan()' id="sntyan">
+            </div>                 
+            <!-- Barras de Hp e Sanidade -->
+
+            <div class="btn-hpminus">
+                <button class="btnrounded row btnspaceminus" onclick="clickHpMinus1Yan()">-1</button>
+                <button class="btnrounded row btnspaceminus" onclick="clickHpMinus5Yan()">-5</button>
+                <button class="btnrounded row btnspaceminus" onclick="clickHpMinus10Yan()">-10</button>  
+            </div>      
+            <div class="btn-hplus">
+                <button class="btnrounded row btnspaceplus" onclick="clickHpPlus1Yan()">+1</button>                
+                <button class="btnrounded row btnspaceplus" onclick="clickHpPlus5Yan()">+5</button>                
+                <button class="btnrounded row btnspaceplus" onclick="clickHpPlus10Yan()">+10</button>   
+            </div>
+            <div class="align">
+            <div id="hpbaryan" class="progress statusbarhp">
+                <div style="background-color: #990000" id="healthyan" class="progress-bar" role="progressbar" aria-valuenow="0"
+                     aria-valuemin="0" aria-valuemax="100">   
+                    <label id="hpnumberyan" class="statusnumber"></label>
+                </div>  
+            </div>         
+            </div>         
+            <div class="btn-hpminus2">
+                <button class="btnrounded row btnspaceminus" onclick="clickSanityMinus1Yan()">-1</button>
+                <button class="btnrounded row btnspaceminus" onclick="clickSanityMinus5Yan()">-5</button>
+                <button class="btnrounded row btnspaceminus" onclick="clickSanityMinus10Yan()">-10</button>                
+            </div>        
+            <div class="btn-hplus2">
+                <button class="btnrounded row btnspaceplus" onclick="clickSanityPlus1Yan()">+1</button>                
+                <button class="btnrounded row btnspaceplus" onclick="clickSanityPlus5Yan()">+5</button>                
+                <button class="btnrounded row btnspaceplus" onclick="clickSanityPlus10Yan()">+10</button>  
+            </div>
+            <div class="align">
+            <div id="sanitybaryan" class="progress statusbarsnt">
+                <div style="background-color: #0047b3" id="sanityyan" class="progress-bar" role="progressbar" aria-valuenow="0"
+                     aria-valuemin="0" aria-valuemax="100"> 
+                    <label id="sntnumberyan" class="statusnumber"></label>
+                </div>
+            </div>
+            </div>
+        </div>        
+        <!-- Fim Yan -->
+        </div>
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
